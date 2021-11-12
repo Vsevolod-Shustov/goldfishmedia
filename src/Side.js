@@ -4,7 +4,7 @@ import styles from './Side.scss';
 
 function Side(){
   return (
-    <aside id={styles.side}>
+    <aside id={styles.aside}>
     side
     </aside>
   )
