@@ -1,26 +1,18 @@
 import React from 'react';
+import { Outlet } from "react-router-dom";
 import Header from './Header';
-import Main from './Main';
-import Side from './Side';
-import Footer from './Footer';
+// import Main from './Main';
+// import Side from './Side';
+// import Footer from './Footer';
 
 import styles from './App.scss';
 
-class App extends React.Component {
-  constructor(props){
-    super(props);
-  }
-
-  render(){
-    return (
-      <div id={styles.app}>
-        <Header />
-        <Main />
-        <Side />
-        <Footer />
-      </div>
-    )
-  }
+export default function App() {
+  return (
+    <div id={styles.app}>
+    <Header />
+    app
+    <Outlet />
+    </div>
+  );
 }
-
-export default App;
