@@ -1,10 +1,8 @@
 import React from 'react';
 
-import styles from './Home.scss';
-
 function Home(){
   return (
-    <main id={styles.home}>
+    <main>
     home
     </main>
   )

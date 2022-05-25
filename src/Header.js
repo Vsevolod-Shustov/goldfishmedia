@@ -1,10 +1,9 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import styles from './Header.scss';
 
 function Header(){
   return (
-    <header id={styles.header}>
+    <header>
     <nav>
       <Link to="/">Home</Link>
       <Link to="/news">News</Link>

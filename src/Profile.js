@@ -1,10 +1,8 @@
 import React from 'react';
 
-import styles from './Profile.scss';
-
 function Profile(){
   return (
-    <main id={styles.profile}>
+    <main>
     profile
     </main>
   )
