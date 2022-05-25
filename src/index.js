@@ -11,6 +11,7 @@ import App from './App';
 import Home from './Home';
 import News from './News';
 import Profile from './Profile';
+import Login from './Login';
 
 // ReactDOM.render(
 //   <React.StrictMode>
@@ -29,6 +30,7 @@ root.render(
         <Route path="/" element={<Home />} />
         <Route path="news" element={<News />} />
         <Route path="profile" element={<Profile />} />
+        <Route path="login" element={<Login />} />
       </Route>
     </Routes>
   </BrowserRouter>
