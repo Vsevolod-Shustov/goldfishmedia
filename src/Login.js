@@ -20,13 +20,13 @@ function Login(){
   }
 
   function handleSubmit(){
-    console.log(name);
-    console.log(pass);
-    console.log(users[0].username);
-    console.log(users[0].password);
+    // console.log(name);
+    // console.log(pass);
+    // console.log(users[0].username);
+    // console.log(users[0].password);
     if(users.find(u => u.username === name && u.password === pass)) {
       console.log("success");
-      localStorage.setItem('loggedIn', true);
+      localStorage.setItem('loggedIn', 'true');
       navigate("/profile");
     } else {
       console.log("fail");
@@ -35,7 +35,7 @@ function Login(){
     event.preventDefault();
   }
 
-  if(loggedIn){
+  if(loggedIn === 'true'){
     return (
       <main>
         You are logged in.

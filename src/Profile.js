@@ -7,10 +7,13 @@ function Profile(){
   console.log(loggedIn);
 
   useEffect(() => {
-    !loggedIn && navigate("/login");
+    //!(loggedIn === true) && navigate("/login");
+    if(!loggedIn === 'true' || loggedIn === null) {
+      navigate("/login");
+    }
   });
 
-  if(loggedIn){
+  if(loggedIn === 'true'){
     return (
       <main>
         profile
